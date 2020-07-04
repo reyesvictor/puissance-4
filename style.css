@@ -1,0 +1,198 @@
+body {
+  background-image: linear-gradient(to right, #001f3f 0, #657ced 100%);
+}
+
+#game-title {
+  margin-bottom: 1vw;
+}
+
+#game-title-player {
+  margin-bottom: 1vw;
+}
+
+#btnnewgame {
+  margin-bottom: 4vw;
+}
+
+.font-color {
+  color: #001f3f;
+}
+
+.choice {
+  padding: 1vw;
+  border-radius: 0.5vw;
+  margin-bottom: 1vw;
+  width: 10vw;
+  padding: 0.5vw;
+  border-radius: 0.3vw;
+  background: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  outline: none;
+  font-family: 'Avenir';
+  cursor: pointer;
+  outline: none;
+  width: fit-content;
+  border: 1px solid grey;
+}
+
+.btn {
+  display: block;
+  position: relative;
+  margin-top: 1em;
+  padding: 0.75em 1em;
+
+  outline: none;
+  border: none;
+  border-radius: 3em;
+
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  background-color: #7d5fff;
+  box-shadow: 0 0.5em 1em -0.5em rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+
+  transition: background-color 0.2s, transform 0.2s;
+  margin: 0 auto 1vw;
+}
+
+button:hover {
+  background: lightgrey;
+}
+
+button:active{
+  border: 1px solid black;
+}
+
+#game {
+  height: 90vh;
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  background: #001f3f;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none; 
+  cursor: pointer;
+  padding: 0.7vw;
+}
+
+.main-div {
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+  background: #001f3f;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none; 
+  cursor: pointer;
+  padding: 0.7vw;
+}
+
+.box {
+  text-align: center;
+  background: white;
+  color: #001f3f;
+  width: 90vw;
+  margin: 0 auto;
+  border-radius: 0.5vw;
+  border: 1px solid grey;
+}
+
+.circle {
+  border: 1px solid black;
+  border-radius: 50%;
+  background: white;
+  -webkit-box-shadow: inset 5px 10px 10px -4px rgba(0,0,0,0.54); 
+  box-shadow: inset 5px 10px 10px -4px rgba(0,0,0,0.54);
+}
+
+
+/* MODAL */
+.modal-window {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.25);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+.modal-window:target {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal-window > div {
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2em;
+  background: #fff;
+}
+.modal-window header {
+  font-weight: bold;
+}
+.modal-window h1 {
+  font-size: 150%;
+  margin: 0 0 15px;
+}
+.modal-close {
+  color: #aaa;
+  line-height: 50px;
+  font-size: 80%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none;
+}
+.modal-close:hover {
+  color: black;
+}
+
+
+#goback {
+  margin-bottom: 0 !important;
+}
+/* Demo Styles */
+/* html, body {
+  height: 100%;
+}
+body {
+  font: 600 12px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  color: black;
+}
+a {
+  color: inherit;
+}
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.modal-window div:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+small {
+  color: #aaa;
+}
+.btn {
+  background-color: #fff;
+  padding: 1em 1.5em;
+  border-radius: 3px;
+  text-decoration: none;
+}
+.btn i {
+  padding-right: 0.3em;
+} */
